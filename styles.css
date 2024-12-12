@@ -1,38 +1,38 @@
 *{
-    /* */
     margin: 0;
     padding: 0;
 }
-
-/* Changes the background completely, puts all text in black, and centers both tables. */
 body{
-    border: 3px solid rgb(0, 0, 0);
-    padding: 8px;
-    background-color: rgb(184, 225, 141);
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+    background-color: rgb(93, 9, 220);
 }
-/* Darkens the first and second table headers */
 caption{
-    font-size: 45px;
+    font-size: 10px;
     font-weight: 600;
 }
-/* Sets all tr ​​to white */
-tr{
-    background-color: white;
-}
-/* The <th> and <td> inside the <tr> changes color to blue when the mouse hovers over it. */
-tr:hover{
-    background-color: #00f9f9;
-}
-/* Removes text from pages within <td> */
-td{
-    padding: 10px 10px;
-}
-/* Combines border lines */
 table{
+    background-color: white;
+    border: 2px solid black;
     border-collapse: collapse;
+}
+td{
+    padding: 10px 15px;
+}
+.star-rating{
+    direction: rtl;
+    font-size: 30px;
+}
+.star-rating input[type="radio"]{
+    display: none;
+}
+.star-rating label{
+    color: gray;
+    cursor: pointer;
+    transition: color 0.2s ease-in-out;
+}
+.star-rating label:hover,
+.star-rating input[type="radio"]:checked ~ label{
+    color:gold;
+}
+.star-rating input[type="radio"]:checked ~ label{
+    color:gold;
 }
